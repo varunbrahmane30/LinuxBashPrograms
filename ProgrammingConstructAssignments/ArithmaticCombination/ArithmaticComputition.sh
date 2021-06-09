@@ -31,3 +31,9 @@ dict[3]=$result3
 dict[4]=$result4
 
 echo "Dictionary Elemnts are :: " ${dict[@]}
+
+
+
+array=(${dict[@]})
+
+echo "array Elements is :: " ${array[@]}
