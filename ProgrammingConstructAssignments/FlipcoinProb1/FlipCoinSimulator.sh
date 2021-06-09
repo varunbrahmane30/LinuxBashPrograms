@@ -19,3 +19,12 @@ done
 echo "head count is: $hcount"
 echo "tail count is: $tcount"
 
+if [[ $hcount -eq 21 ]]
+then
+	echo "$hcount times Head is winner"
+elif [[ $tcount -eq 21 ]]
+then
+	echo "$tcount times Tail is winner"
+else
+	echo "match is tie"
+fi
