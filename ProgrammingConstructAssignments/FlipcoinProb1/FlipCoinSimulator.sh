@@ -28,3 +28,19 @@ then
 else
 	echo "match is tie"
 fi
+
+if [[ $hcount -eq $tcount ]]
+then
+
+ randomCheck=$(( RANDOM%2 ))
+        if [[ $randomCheck == 0 ]]
+        then
+                echo "Head"
+                ((hcount++));
+        else
+                echo "Tail"
+                ((tcount++));
+        fi
+else
+	exit;
+fi
